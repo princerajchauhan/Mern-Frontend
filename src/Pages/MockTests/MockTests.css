@@ -1,0 +1,211 @@
+
+
+.mock-test-top-info{
+    width: 100%;
+    height: 38vh;
+    background: transparent linear-gradient(180deg,#3969ad,#1d3557);
+}
+
+.mock-test-top-inner{
+    color: white;
+    padding-top: 76px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mock-test-top-inner>h3{
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 36px;
+    padding-bottom: 26px;
+}
+
+.mock-test-top-inner>p{
+    width: 50%;
+    font-size: 14px;
+    letter-spacing: .14px;
+    line-height: 1.4;
+    padding-bottom: 29px;
+}
+
+.mock-test-featured{
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.mock-test-heading{
+    color: #22559c;
+    font-size: 28px;
+}
+
+.past-mock-test{
+    margin: 20px 0;
+}
+
+.past-mock-test>p{
+    text-align: center;
+    color: #ffa000;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    margin: 15px 0 40px;
+}
+
+.past-mock-test>p::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+    background-color: #5f8dc4;
+    margin-top: 11px;
+}
+
+.past-mock-test>p::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 3px;
+    width: 40%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #5f8dc4;
+    margin-top: 11px;
+}
+
+.mock-test-all-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+    margin-bottom: 50px;
+    column-gap: 40px;
+}
+
+.mock-test-box{
+    width: 17em;
+    padding: 10px;
+    margin: 0 auto 30px;
+    background: linear-gradient(180deg,#e0ebf9,#fff 54%,#fff) 0 0 no-repeat padding-box;
+    box-shadow: 0 0 30px lightgray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.mock-test-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.mock-test-icon>img{
+    color: rgb(38, 38, 141);
+    height: 25px;
+    margin: 8px;
+    cursor: pointer;
+}
+.mock-test-icon>img:nth-child(2){
+    height: 20px;
+    width: 20px;
+}
+
+.mock-test-image{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.mock-test-image>img{
+    width: 70%;
+    height: 80px;
+}
+
+.mock-test-box-heading{
+    text-align: center;
+    font-size: 18px;
+    color: #3969ad;
+    font-weight: 500;
+}
+
+.mock-test-date-time{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.mock-test-date-time>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+}
+
+.mock-test-date-time>div>p{
+    font-size: 15px;
+    color: #707070;
+    font-weight: 500;
+}
+.mock-test-date-time>div>span{
+    font-size: 11px;
+    color: #707070;
+}
+
+.mock-test-date-time>div:nth-child(2){
+    border-right: 2px solid #e0ebf9;
+    border-left: 2px solid #e0ebf9;
+}
+
+.mock-test-box-button{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.mock-test-box-button>button{
+    color: white;
+    background-color: #22559c;
+    cursor: pointer;
+    box-shadow: 0 0 10px lightgray;
+    border: none;
+    padding: 11px 33.7px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.mock-test-price{
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 1px 10px;
+    color: red;
+    animation: priceColor 3s linear infinite;
+}
+@keyframes priceColor {
+    0% {
+        background-color: rgb(157, 223, 157);
+    }
+    20%{
+        background-color: bisque;
+    }
+
+    40% {
+        background-color: rgb(200, 234, 246);
+    }
+    60%{
+        background-color: rgb(152, 216, 182);
+    }
+
+    80% {
+        background-color: rgb(239, 177, 153);
+    }
+    90%{
+        background-color: white;
+    }
+}
+

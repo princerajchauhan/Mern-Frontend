@@ -1,0 +1,10 @@
+.instructors-main{
+    background-color:  rgba(188,242,251,1);
+    margin-top:-60px;
+}
+
+.instructors{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}

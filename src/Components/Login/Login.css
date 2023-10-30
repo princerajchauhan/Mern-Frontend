@@ -1,0 +1,93 @@
+
+.login-main{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-main>p{
+    color: #767779;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    /* margin-bottom: 25px; */
+}
+
+.login-input-box{
+    position: relative;
+    margin-top: 40px;
+}
+
+.login-input-box>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #767779;
+    background-color: transparent;
+}
+
+.login-input-box>label{
+    position: absolute;
+    top: -20px;
+    font-size: 16px;
+    left: 0;
+    padding: 19px 5px;
+    pointer-events: none;
+    color: rgb(97, 93, 93);
+    transition: 0.5s;
+}
+
+
+.login-input-box>input:valid~label,
+.login-input-box>input:focus~label {
+    color: blue;
+    transform: translateY(-3px);
+    font-size: 12px;
+    padding: 0;
+}
+
+.login-forgot{
+    margin-top: 30px;
+}
+
+.login-forgot>a{
+    text-decoration: none;
+    color: #4b8ce8;
+    font-size: 14px;
+}
+
+.login-submit-btn{
+    background-color: #4b8ce8;
+    color: white;
+    border: none;
+    padding: 5px 52px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+.otp-btn{
+    background-color: #f2f8ff;
+    color: #4b8ce8;
+    border: 1px solid #4b8ce8;
+    padding: 5px 52px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+
+.login-show-hide{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: #767779;
+    font-size: 20px;
+    cursor: pointer;
+}

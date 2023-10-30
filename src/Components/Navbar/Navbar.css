@@ -1,0 +1,123 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Nova+Script&family=Poppins&display=swap'); */
+
+.nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    background-color: white;
+    box-shadow: 0 0 5px lightgray;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+    z-index: 50;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 76px;
+    padding-top: 5px;
+}
+.logo{
+    width: 20%;
+    margin-left: 30px;
+}
+
+.logo>img{
+    width: 166px;
+    cursor: pointer;
+}
+nav{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.login-register{
+    margin-right: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.login-register>button{
+    padding: 2px 15px;
+    border-radius: 5px;
+    border: 2px solid #f941a9;
+    cursor: pointer;
+    background-color: transparent;
+}
+.login-register>button:nth-child(2){
+    background-image: linear-gradient(0deg,#f941a9,#ff219f);
+}
+.login-register>button>a{
+    text-decoration: none;
+    font-family: "poppins","sans-serif";
+    color: #f941a9;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+}
+.login-register>button:nth-child(2)>a{
+    color: white;
+}
+
+.login-register>button:hover> a{
+    color: black;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 3%;
+}
+
+.nav-item{
+    list-style: none;
+    color: #707070;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+}
+
+.nav-item:hover{
+    color: black;
+}
+.nav-item>span{
+    display: flex;
+    align-items: flex-end;
+}
+
+.sub-nav-menu{
+    position: absolute;
+    padding: 10px 15px;
+    width: 270px;
+    box-shadow: 0 0 3px lightgray;
+    border-radius: 5px;
+    background-color: white;
+    display: none;
+    left: 0;
+    color: #707070;
+}
+
+.sub-nav-menu>li{
+    list-style: none;
+}
+.sub-nav-menu>li>a{
+    text-decoration: none;
+    color: #707070;
+}
+.sub-nav-menu>li:hover> a{
+    color: rgb(0, 165, 236);
+    font-weight: 600;
+}
+
+.nav-item:hover> .sub-nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-item:hover> .sub-item3{
+    left: -230%;
+    width: 200px;
+}

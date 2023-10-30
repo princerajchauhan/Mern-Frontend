@@ -1,0 +1,121 @@
+
+.register-main{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-main>p{
+    color: #767779;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    /* margin-bottom: 25px; */
+}
+
+.register-input-box{
+    position: relative;
+    margin-top: 30px;
+}
+
+.register-input-box>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #767779;
+    background-color: transparent;
+}
+
+.register-college{
+    width: 50%;
+}
+
+.register-input-box>label{
+    position: absolute;
+    top: -20px;
+    font-size: 16px;
+    left: 0;
+    padding: 19px 5px;
+    pointer-events: none;
+    color: rgb(97, 93, 93);
+    transition: 0.5s;
+}
+
+
+.register-input-box>input:valid~label,
+.register-input-box>input:focus~label {
+    color: blue;
+    transform: translateY(-3px);
+    font-size: 12px;
+    padding: 0;
+}
+
+.register-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-select{
+    position: relative;
+}
+
+.register-select::after{
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #4b8ce8;
+  position: absolute;
+  top: 42%;
+  right: 3px;
+  content: "";
+  z-index:5;
+}
+
+.register-input-box>select{
+    width:100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #767779;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #767779;
+}
+
+.register-forgot{
+    margin-top: 30px;
+}
+
+.register-forgot>a{
+    text-decoration: none;
+    color: #4b8ce8;
+    font-size: 14px;
+}
+
+.register-submit-btn{
+    background-color: #4b8ce8;
+    color: white;
+    border: none;
+    padding: 5px 52px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+.register-show-hide{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: #767779;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.register-agree{
+    margin-top: 20px;
+}
+.register-agree>label>span{
+    color: #4b8ce8;
+}

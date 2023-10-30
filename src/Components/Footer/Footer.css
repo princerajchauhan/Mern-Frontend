@@ -1,0 +1,122 @@
+
+
+.footer-main{
+    background-color: #d9f5f9;
+    font-size: 18px;
+    padding: 35px 12%;
+    letter-spacing: 0.6px;
+}
+
+.footer-main-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-follow-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.footer-follow, .footer-contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-follow-img{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-contact-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-contact-img>div{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+.footer-contact-img>div>a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-latest-articles{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-popular-articles{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-quick-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-latest-popular{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-latest, .footer-popular{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-latest-articles, .footer-popular-articles{
+    font-size: 14px;
+}
+.footer-latest-articles>a, .footer-popular-articles>a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 22px;
+    color: black;
+}
+
+.footer-quick{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-quick-links{
+    font-size: 16px;
+}
+
+.footer-quick-links>a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-bottom: 3%;
+    color: black;
+}
+
+.footer-main-down{
+    border-top: 2px solid lightgray;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-down-left{
+    font-size: 14px;
+    color: #4a4a4a;
+    letter-spacing: 1.25px;
+}
+
+.footer-down-right{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-down-right>a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #707070;
+}

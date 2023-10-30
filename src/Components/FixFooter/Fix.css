@@ -1,0 +1,23 @@
+
+
+.fix-main{
+    background-color: #00a5ec;
+    text-align: center;
+    padding: 4px 0;
+    position: fixed;
+    bottom: 0;
+    /* width: 100vw; */
+    width: 100%;
+    z-index: 50;
+}
+
+.fix-main>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.fix-main>a:nth-child(3){
+    text-decoration: underline;
+}
