@@ -1,0 +1,33 @@
+
+
+.languages-main{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.language-left{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.language-left>p:nth-child(1){
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.language-left>p:nth-child(2){
+    text-align: center;
+    color: rgba(106,127,134,.9294117647058824);
+}
+
+.language-right{
+    width: 50%;
+    margin-top: 50px
+}
+.language-right>img{
+    width: 100%;
+}

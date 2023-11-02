@@ -21,13 +21,13 @@ const Navbar = () => {
                     <li className="nav-item"><span>Study Material<MdArrowDropDown /></span>
                         <ul className="sub-nav-menu">
                             <li><Link to="/mock-tests">Mock Test</Link></li>
-                            <li><Link>Video Tutorial</Link></li>
+                            <li><Link to="/preparation-videos">Video Tutorial</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item"><span>Courses and Programs<MdArrowDropDown /></span>
                     <ul className="sub-nav-menu sub-item1">
-                            <li><Link>Master Competitive Programming</Link></li>
-                            <li><Link>Full Stack Program</Link></li>
+                            <li><Link to="master-competitive-programming">Master Competitive Programming</Link></li>
+                            <li><Link to="online-full-stack-developer-mern-certification-program">Full Stack Program</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">Elevation Academy</li>

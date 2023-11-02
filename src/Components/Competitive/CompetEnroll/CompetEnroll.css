@@ -1,0 +1,71 @@
+.compet-enroll{
+    width: 100%;
+    margin-bottom: 50px;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+.compet-enroll-main{
+    width: 1157px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    align-items: center;
+    padding-right: 70px;
+}
+
+.compet-enroll-main>p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.compet-enroll-mid{
+    display: flex;
+    gap: 40px;
+}
+.compet-enroll-mid>div{
+    box-shadow: 0 0 10px lightgray;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 5px;
+    border-bottom: 4px solid #08a2eb;
+    color: #1477d2;
+}
+.compet-enroll-mid>div:hover{
+    box-shadow: 0 0 20px lightgray;
+}
+.compet-enroll-mid>div>h5{
+    font-size: 1.1rem;
+}
+
+.compet-enroll-mid>div>p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.compet-enroll-last>h5{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #08a2eb;
+}
+
+.compet-enroll-last>button{
+    background: linear-gradient(79deg,#3194ee,#1477d2);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    min-width: 130px;
+    cursor: pointer;
+}
+
+.compet-enroll-active{
+    background-color: #08a2eb;
+}
+.compet-enroll-active>h5, .compet-enroll-active>p{
+    color: white;
+}

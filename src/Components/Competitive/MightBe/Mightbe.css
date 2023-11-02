@@ -1,0 +1,76 @@
+
+
+.mightbe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1147px;
+    margin: 1rem auto;
+    margin-top: 3rem;
+}
+
+.mightbe>p{
+    text-align: center;
+    font-weight: 900;
+    color: #151414;
+    font: normal normal 500 1.75rem/2rem Inter;
+    margin-bottom: 1.5rem;
+}
+
+.mightbe-carousel{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.mightbe-box{
+    padding: 0 5%;
+    height: 100%;
+}
+
+.mightbe-heading{
+    display: flex;
+    align-items: center;
+    padding: 0 0.7rem;
+    justify-content: space-between;
+
+}
+.mightbe-heading>img{
+    width: 20%;
+}
+.mightbe-heading>h5{
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.mightbe-box>p{
+    height: 170px;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 0.4rem 1rem; 
+    line-height: 23px;
+    margin: 15px 0px;
+    font-size: 0.75rem;
+    text-align: left;
+}
+.mightbe-down{
+    position: relative;
+    margin-top: 40px;
+}
+
+.mightbe-down>img:nth-child(1){
+    width: 100%;
+}
+
+.mightbe-down>img:nth-child(2){
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+}
+
+.react-multi-carousel-list{
+    width: 100%;
+}

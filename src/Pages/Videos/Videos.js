@@ -1,6 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
+import ReactPlayer from 'react-player'
+import "./Videos.css"
+import { useDispatch, useSelector } from "react-redux"
+import { videoLinks } from "../../Features/VideoSlice"
 
 const Videos = () => {
+
+    const { isLoading, video } = useSelector(state => state.video)
+    const dispatch = useDispatch()
+
+    useEffect(() =>{
+        window.scrollTo(0, 0)
+    })
+
+    useEffect(() => {
+        dispatch(videoLinks())
+        // eslint-disable-next-line
+    }, [])
+
     return (
         <div className="videos-main">
             <div className="videos-top-desc">
@@ -10,6 +27,28 @@ const Videos = () => {
                 </div>
                 <div className="videos-top-right">
                     <img src="./images/videos/video_lib_illustration.png" alt="video_lib_illustration" />
+                </div>
+            </div>
+
+            <div className="videos-categories-main">
+                <h3>CATEGORIES</h3>
+                <div className="videos-category">
+                    {
+                        isLoading ? <h2>Loading.....</h2> :
+                            video && video.map(elem => (
+                                <div className="videos-box" key={elem.id}>
+                                    <ReactPlayer url={elem.link} controls={true} width="100%" height="55%" style={{ borderRadius: '5px' }} />
+                                    <div className="video-desc">
+                                        <p>{elem.heading}</p>
+                                        <p>{elem.desc}</p>
+                                    </div>
+                                    <div className="video-icon">
+                                        <img src="./images/videos/video-icon.svg" alt="video-icon" />
+                                        <p>video</p>
+                                    </div>
+                                </div>
+                            ))
+                    }
                 </div>
             </div>
         </div>

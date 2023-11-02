@@ -1,0 +1,127 @@
+
+
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+    max-width: 1147px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.curriculum>p{
+    text-align: center;
+    font-weight: 500;
+    color: #151414;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.curriculum-main{
+    width: 100%;
+    display: flex;
+}
+
+.curriculum-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.curriculum-left-box{
+    height: 60px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow:  0 1px 3px lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.curriculum-left-box:hover{
+    box-shadow: 0 5px 10px gray;
+}
+
+.curriculum-left-box>img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.curriculum-left-box>p{
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-left: 1px solid black;
+}
+.curriculum-left-box:nth-child(1)>p{
+    border-left: 1px solid #00a6ec;
+    color: #00a6ec;
+}
+
+.curriculum-left>img{
+    position: absolute;
+    bottom: 0;
+    height: 10rem;
+}
+
+.curriculum-right{
+    width: 50%;
+    padding: 0rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.curriculum-right>ul{
+    height: 402px;
+    width: 100%;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.curriculum-right>ul>li{
+    position: relative;
+    padding-left: 2rem;
+    margin: 1rem 0rem;
+    font-size: 12px;
+    color: #151414;
+}
+.curriculum-right>ul>li::before{
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 12px;
+    width: 2px;
+    height: 25px;
+    z-index: -1;
+    background-color: #00a6eb;
+}
+
+.curriculum-right>ul>li::after{
+    content: "";
+    font-size: 30px;
+    position: absolute;
+    top: 4.5px;
+    left: 7.5px;
+    width: 7.5px;
+    height: 8px;
+    border: 2px solid #00a6eb;
+    border-radius: 50%;
+}
+.curriculum-right>ul>li:last-child::before{
+    height: 0;
+}

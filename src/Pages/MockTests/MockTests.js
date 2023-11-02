@@ -9,6 +9,10 @@ const MockTests = () => {
     const { test, isLoading } = useSelector(state => state.test)
 
     const dispatch = useDispatch()
+    
+    useEffect(() =>{
+        window.scrollTo(0, 0)
+    })
 
     useEffect(() => {
         dispatch(mockTest())
