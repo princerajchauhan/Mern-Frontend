@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const videoLinks = createAsyncThunk("video-data", async()=>{
-    const response = await axios.get("https://prince-ecom-backend.onrender.com/api/video").then(res => res.data).catch(err => console.log(err))
+    const response = await axios.get("https://mern-backend-pntb.onrender.com/api/video").then(res => res.data).catch(err => console.log(err))
     return response
 })
 

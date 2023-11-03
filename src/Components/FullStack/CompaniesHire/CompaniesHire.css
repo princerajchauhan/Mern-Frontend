@@ -1,0 +1,64 @@
+
+.hire-comapny-top{
+    background-color: #f7f9fb;
+}
+
+.hire-company{
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 75vh;
+    padding-bottom: 80px;
+}
+
+.hire-company>p{
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 30px;
+}
+
+.hire-company-all{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hire-company-box{
+    flex: 0 0 21em;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #fff;
+    position: relative;
+    background: linear-gradient(180deg,#d0dee9,#fff) 0 0 no-repeat padding-box;
+    box-shadow: 0 10px 30px rgb(208 222 233 / 42%);
+    border-radius: 10px;
+}
+
+.hire-company-box>p:nth-child(1){
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.hire-company-box>p:nth-child(2){
+    color: rgba(106,127,134,.9294117647058824);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.all-hire-company{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.all-hire-company>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-hire-company>div:nth-child(2){
+    justify-content: center;
+}
