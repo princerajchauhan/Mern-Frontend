@@ -13,7 +13,6 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const MockTests = () => {
 
-    // const [mock, setMock] = useState([])
     const { test, isLoading } = useSelector(state => state.test)
 
     const dispatch = useDispatch()
@@ -31,8 +30,10 @@ const MockTests = () => {
     }, [])
 
     const CheckTest = async(elem) =>{
-        const check = await axios.post("https://mern-backend-pntb.onrender.com/api/buytest", elem).then(res => res.data).catch(err => console.log(err))
-        if (check.msg2 === true) {
+        const id = JSON.parse(localStorage.getItem("prepbytes-user")).userId
+        const check = await axios.post("https://mern-backend-pntb.onrender.com/api/buytest", {elem, id}).then(res => res.data).catch(err => console.log(err))
+        console.log(check)
+        if (check.msg2 === 'true') {
             MakePayment(elem)
         }
         else{

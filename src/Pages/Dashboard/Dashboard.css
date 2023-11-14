@@ -4,7 +4,7 @@
     padding-top: 76px;
     display: flex;
     background-color: #f0f3f4;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .panel-nav-drawer{

@@ -16,9 +16,9 @@ const Dashboard = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        dispatch(AllTest())
         const user = JSON.parse(localStorage.getItem("prepbytes-user"))
         if (user) {
+            dispatch(AllTest(user.userId))
             setToken(user.token)
         }
         else {

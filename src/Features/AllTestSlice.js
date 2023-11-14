@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const AllTest = createAsyncThunk("all-test", async() =>{
-    const response = await axios.get("https://mern-backend-pntb.onrender.com/api/getalltest").then(res => res.data).catch(err => console.log(err))
+export const AllTest = createAsyncThunk("all-test", async(id) =>{
+    const response = await axios.get(`https://mern-backend-pntb.onrender.com/api/getalltest/${id}`).then(res => res.data).catch(err => console.log(err))
     return response
 })
 
