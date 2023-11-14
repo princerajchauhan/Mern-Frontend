@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home'
 import LoginSignup from '../Pages/LoginSignup/LoginSignup'
@@ -14,13 +14,7 @@ import Dashboard from '../Pages/Dashboard/Dashboard'
 import Project from '../Pages/Projects/Project'
 
 const Routing = () => {
-    const [token, setToken] = useState()
-    useEffect(() => {
-        const user = JSON.parse(localStorage.getItem("prepbytes-user"))
-        if (user) {
-            setToken(user.token)
-        }
-    }, [])
+  
     return (
         <>
             <Routes>
@@ -34,7 +28,7 @@ const Routing = () => {
                 <Route path='/mern-stack-web-development-career' element={<Elevation />} />
                 <Route path='/success' element={<Success />} />
                 <Route path='/cancel' element={<Cancel />} />
-                <Route path='/panel' element={token ? <Dashboard /> : <Home />} />
+                <Route path='/panel' element={<Dashboard />} />
                 <Route path='/project/:name' element={<Project />} />
             </Routes>
             <ToastContainer />
