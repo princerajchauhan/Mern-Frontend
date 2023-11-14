@@ -20,7 +20,7 @@ import Spinner from "../Spinner/Spinner";
 
 const Elevation = () => {
 
-    const { might, isLoading } = useSelector(state => state.might)
+    const { isLoading } = useSelector(state => state.might)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -30,6 +30,7 @@ const Elevation = () => {
     useEffect(() => {
         dispatch(mightData())
         document.title = "PrepBytes Elevation Academy | Full Stack Web Development"
+        // eslint-disable-next-line
     }, [])
     return (
         <>

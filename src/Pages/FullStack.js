@@ -31,6 +31,7 @@ const FullStack = () => {
     useEffect(() => {
         dispatch(videoLinks())
         document.title = "Learn Full Stack Web Development | Mern Certification Program | PrepBytes"
+        // eslint-disable-next-line
     }, [])
     return (
         <>
