@@ -1,0 +1,41 @@
+
+.dash-nav{
+    padding-left: 30px;
+}
+
+.dash-nav-log>ul>li{
+    color: rgb(244, 69, 69);
+    font-size: 16px;
+    text-align: center;
+}
+
+.dash-nav-log{
+    border-right: 0;
+}
+
+.dash-nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.dash-nav-side{
+    cursor: pointer;
+    font-size: 18px;
+    transition: margin 1s ease;
+}
+
+
+/* ********************** RESPONSIVE ***************** */
+@media screen and (max-width:480px) {
+   .dash-nav-side{
+    display: none;
+   }
+
+   .dashboard-name{
+    padding-right: 10px;
+   }
+
+   .logo{
+    margin-left: 0;
+   }
+}

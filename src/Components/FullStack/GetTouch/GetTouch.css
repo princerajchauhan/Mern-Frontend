@@ -92,15 +92,15 @@
     border-bottom: 2px solid black;
 }
 
-.get-right-btn{
+.get-right-btn {
     text-align: center;
     margin-top: 40px;
 }
 
-.get-right-btn>button{
+.get-right-btn>button {
     background: transparent;
     -webkit-box-shadow: 0 3px 6px rgb(95 141 196 / 20%);
-    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
     border-radius: 5px;
     color: #ff219f;
     border: 1px solid #ff219f;
@@ -110,8 +110,52 @@
     font-size: 18px;
 }
 
-.get-right-btn>p{
+.get-right-btn>p {
     margin-top: 10px;
     text-align: center;
     color: #707070;
+}
+
+
+/* ********************** RESPONSIVE ******************** */
+
+@media screen and (max-width: 1027px) {
+    .get-touch-left {
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .get-touch-form {
+        flex-direction: column;
+    }
+
+    .get-touch-left {
+        width: 100%;
+    }
+
+    .get-touch-right {
+        width: 100%;
+    }
+
+    .get-touch-left::before {
+        content: "";
+        opacity: .15;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #979797;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .get-touch-form{
+        padding: 60px 20px;
+    }
+    .get-touch-left>div>p {
+        text-align: center;
+    }
+
 }

@@ -69,3 +69,44 @@
 .certification-right>div>img {
     width: 100%;
 }
+
+/* ****************** RESPONSIVE ************************ */
+
+@media screen and (max-width: 1024px) {
+    .certification-left{
+        padding: 10px 20px;
+    }
+
+    .certification-left>p{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certification{
+        flex-direction: column;
+    }
+    .certification-left{
+        width: 100%;
+        padding: 10px 50px;
+        padding-bottom: 80px;
+    }
+
+    .certification-left>p{
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    .certification-right{
+        width: 100%;
+        padding: 0 0 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certification-left{
+        padding: 10px;
+        padding-bottom: 80px;
+    }
+}

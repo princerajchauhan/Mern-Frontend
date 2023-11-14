@@ -1,16 +1,13 @@
 import React, { useContext, useState } from 'react'
 import "./ProgramSyllabus.css"
 import ProgramContext from './ProgramContext'
+import ProjectData from './ProgramProject'
 
 const ProgramSyllabus = () => {
-    const [showHide0, setShowHide0] = useState(false)
-    const [showHide1, setShowHide1] = useState(false)
-    const [showHide2, setShowHide2] = useState(false)
-    const [showHide3, setShowHide3] = useState(false)
-    const [showHide4, setShowHide4] = useState(false)
-    const [showHide5, setShowHide5] = useState(false)
+    const [value, setValue] = useState(0)
     const [showHide6, setShowHide6] = useState(false)
     const data = useContext(ProgramContext)
+    const project = useContext(ProjectData)
     return (
         <div className='program-syllabus'>
             <div className="prog-syllabus-heading">
@@ -24,163 +21,39 @@ const ProgramSyllabus = () => {
             </div>
 
             {
-                data && <>
-                    <div className="prog-syllabus-box">
+                data && data.map(elem => (
+                    <div className="prog-syllabus-box" key={elem.id}>
                         <div className="prog-syllabus-top">
                             <div>
-                                <p>{data[0].heading}</p>
-                                <p>Week {data[0].week}</p>
+                                <p>{elem.heading}</p>
+                                <p>Week {elem.week}</p>
                             </div>
-                            <p>{data[0].desc}</p>
+                            <p>{elem.desc}</p>
                         </div>
-                        <div className="prog-syllabus-mid" style={{ background: showHide0 ? "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : "" }}>
-                            <p style={{ color: showHide0 ? "white" : "" }}>Course Content</p>
+                        <div className="prog-syllabus-mid" style={{
+                            background: value === elem.id ?
+                                "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : ""
+                        }}>
+                            <p style={{ color: value === elem.id ? "white" : "" }}>Course Content</p>
                             {
-                                showHide0 ? <button onClick={() => setShowHide0(!showHide0)} className='hide-btn'>Hide</button> :
-                                    <button onClick={() => setShowHide0(!showHide0)} className='show-btn'>View Details</button>
+                                value === elem.id ? <button onClick={() => setValue(0)} className='hide-btn'>Hide</button> :
+                                    <button onClick={() => setValue(elem.id)} className='show-btn'>View Details</button>
                             }
                         </div>
-                        <div className="prog-syllabus-last" style={{ maxHeight: showHide0 ? '580px' : '0px', padding: showHide0 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
+                        <div className="prog-syllabus-last" style={{
+                            maxHeight: value === elem.id ? '580px' : '0px',
+                            padding: value === elem.id ? '21px 44px 21px 17px' : '0px 44px 0 17px'
+                        }}>
                             <ul>
                                 {
-                                    data[0].course.map((item, i) => (
+                                    elem.course.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))
                                 }
                             </ul>
                         </div>
                     </div>
-
-                    <div className="prog-syllabus-box">
-                        <div className="prog-syllabus-top">
-                            <div>
-                                <p>{data[1].heading}</p>
-                                <p>Week {data[1].week}</p>
-                            </div>
-                            <p>{data[1].desc}</p>
-                        </div>
-                        <div className="prog-syllabus-mid" style={{ background: showHide1 ? "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : "" }}>
-                            <p style={{ color: showHide1 ? "white" : "" }}>Course Content</p>
-                            {
-                                showHide1 ? <button onClick={() => setShowHide1(!showHide1)} className='hide-btn'>Hide</button> :
-                                    <button onClick={() => setShowHide1(!showHide1)} className='show-btn'>View Details</button>
-                            }
-                        </div>
-                        <div className="prog-syllabus-last" style={{ maxHeight: showHide1 ? '580px' : '0px', padding: showHide1 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
-                            <ul>
-                                {
-                                    data[1].course.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="prog-syllabus-box">
-                        <div className="prog-syllabus-top">
-                            <div>
-                                <p>{data[2].heading}</p>
-                                <p>Week {data[2].week}</p>
-                            </div>
-                            <p>{data[2].desc}</p>
-                        </div>
-                        <div className="prog-syllabus-mid" style={{ background: showHide2 ? "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : "" }}>
-                            <p style={{ color: showHide2 ? "white" : "" }}>Course Content</p>
-                            {
-                                showHide2 ? <button onClick={() => setShowHide2(!showHide2)} className='hide-btn'>Hide</button> :
-                                    <button onClick={() => setShowHide2(!showHide2)} className='show-btn'>View Details</button>
-                            }
-                        </div>
-                        <div className="prog-syllabus-last" style={{ maxHeight: showHide2 ? '580px' : '0px', padding: showHide2 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
-                            <ul>
-                                {
-                                    data[2].course.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="prog-syllabus-box">
-                        <div className="prog-syllabus-top">
-                            <div>
-                                <p>{data[3].heading}</p>
-                                <p>Week {data[3].week}</p>
-                            </div>
-                            <p>{data[3].desc}</p>
-                        </div>
-                        <div className="prog-syllabus-mid" style={{ background: showHide3 ? "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : "" }}>
-                            <p style={{ color: showHide3 ? "white" : "" }}>Course Content</p>
-                            {
-                                showHide3 ? <button onClick={() => setShowHide3(!showHide3)} className='hide-btn'>Hide</button> :
-                                    <button onClick={() => setShowHide3(!showHide3)} className='show-btn'>View Details</button>
-                            }
-                        </div>
-                        <div className="prog-syllabus-last" style={{ maxHeight: showHide3 ? '580px' : '0px', padding: showHide3 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
-                            <ul>
-                                {
-                                    data[3].course.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="prog-syllabus-box">
-                        <div className="prog-syllabus-top">
-                            <div>
-                                <p>{data[4].heading}</p>
-                                <p>Week {data[4].week}</p>
-                            </div>
-                            <p>{data[4].desc}</p>
-                        </div>
-                        <div className="prog-syllabus-mid" style={{ background: showHide4 ? "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : "" }}>
-                            <p style={{ color: showHide4 ? "white" : "" }}>Course Content</p>
-                            {
-                                showHide4 ? <button onClick={() => setShowHide4(!showHide4)} className='hide-btn'>Hide</button> :
-                                    <button onClick={() => setShowHide4(!showHide4)} className='show-btn'>View Details</button>
-                            }
-                        </div>
-                        <div className="prog-syllabus-last" style={{ maxHeight: showHide4 ? '580px' : '0px', padding: showHide4 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
-                            <ul>
-                                {
-                                    data[4].course.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="prog-syllabus-box">
-                        <div className="prog-syllabus-top">
-                            <div>
-                                <p>{data[5].heading}</p>
-                                <p>Week {data[5].week}</p>
-                            </div>
-                            <p>{data[5].desc}</p>
-                        </div>
-                        <div className="prog-syllabus-mid" style={{ background: showHide5 ? "linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824))" : "" }}>
-                            <p style={{ color: showHide5 ? "white" : "" }}>Course Content</p>
-                            {
-                                showHide5 ? <button onClick={() => setShowHide5(!showHide5)} className='hide-btn'>Hide</button> :
-                                    <button onClick={() => setShowHide5(!showHide5)} className='show-btn'>View Details</button>
-                            }
-                        </div>
-                        <div className="prog-syllabus-last" style={{ maxHeight: showHide5 ? '580px' : '0px', padding: showHide5 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
-                            <ul>
-                                {
-                                    data[5].course.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                </>
+                ))
             }
 
             <div className="prog-syllabus-box">
@@ -201,14 +74,18 @@ const ProgramSyllabus = () => {
 
                 <div className="prog-syllabus-last pro-syllabus-project" style={{ maxHeight: showHide6 ? '3000px' : '0px', padding: showHide6 ? '21px 44px 21px 17px' : '0px 44px 0 17px' }}>
                     <div>
-                        <div>
-                            <div>
-                                <img src="./images/project/HTML_HTML.svg" alt="HTML_HTML" />
-                            </div>
-                            <p>HTML Blog Page</p>
-                            <p>Start your web development by making a simple blog page using HTML.</p>
-                        </div>
-
+                        {
+                            project && project.map(elem => (
+                                <div key={elem.id}>
+                                    <div>
+                                        <img src={elem.photo} alt={elem.heading} />
+                                    </div>
+                                    <p>{elem.heading}</p>
+                                    <p>{elem.desc}</p>
+                                </div>
+                            ))
+                        }
+{/* 
                         <div>
                             <div>
                                 <img src="./images/project/Clock.svg" alt="Clock" />
@@ -236,7 +113,7 @@ const ProgramSyllabus = () => {
                             </div>
                             <p>E-commerce Web App</p>
                             <p>This will be one of the major projects of the program. It will be a full-fledged working website. Just add some products and you will be ready to sell online and take payments.</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -1,0 +1,134 @@
+
+
+.single-pro{
+    display: flex;
+    margin: 20px auto auto;
+    gap: 5%;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.single-pro-left>p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #2d3436;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.single-pro-left{
+    width: 100%;
+}
+
+.single-pro-left>div{
+    width: 100%;
+}
+
+.single-pro-left>div>img{
+    width: 100%;
+}
+
+.single-pro-left>h4{
+    font-size: 30px;
+    border-top: 2px solid gray;
+    margin-top: 20px;
+}
+.single-pro-left>p:last-child{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.single-pro-right{
+    width: 40%;
+    margin-top: 65px;
+    background-color: #fff;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 5px;
+    padding: 15px;
+    height: fit-content;
+}
+
+.single-pro-right>h3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-pro-right>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.single-pro-right>ul>li{
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+}
+
+
+/*  ********************** RESPONSIVE ********************* */
+
+@media screen and (max-width: 1024px) {
+    .single-pro{
+        max-width: 90%;
+    }
+
+    .single-pro-left{
+        width: 80%;
+    }
+    .single-pro-right{
+        width: 50%;
+    }
+    .single-pro-left>h4{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .single-pro{
+        flex-direction: column;
+        max-width: 80%;
+    }
+    .single-pro-left{
+        width: 100%;
+    }
+    .single-pro-right{
+        width: 60%;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .single-pro{
+        max-width: 90%;
+    }
+    .single-pro-left{
+        width: 100%;
+    }
+    .single-pro-right{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .single-pro-left>p:last-child{
+        font-size: 15px;
+    }
+    .single-pro-left>p:first-child{
+        font-size: 22px;
+        text-align: center;
+    }
+    .single-pro-right{
+        width: 90%;
+    }
+    .single-pro-left>h4{
+        font-size: 20px;
+    }
+}

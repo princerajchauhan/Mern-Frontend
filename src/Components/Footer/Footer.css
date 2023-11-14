@@ -5,6 +5,7 @@
     font-size: 18px;
     padding: 35px 12%;
     letter-spacing: 0.6px;
+    margin-top: auto;
 }
 
 .footer-main-top{
@@ -119,4 +120,53 @@
     text-decoration: none;
     font-size: 14px;
     color: #707070;
+}
+
+/* *************************** RESPONSIVE ******************** */
+
+@media screen and (max-width:1000px) {
+    .footer-main{
+        padding: 35px 5%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    .footer-main-top{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .footer-main-top{
+        padding-right: 0;
+        padding-left: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }   
+    .footer-latest-popular{
+        margin-top: 50px;
+    }
+    .footer-follow{
+        align-items: center;
+    }
+    .footer-quick{
+        margin-top: 50px;
+    }
+    .footer-quick-links{
+        font-size: 15px;
+    }
+    .footer-main-down{
+        flex-direction: column;
+    }
+    .footer-down-left>p, .footer-down-right>a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-main-down{
+        padding-bottom: 25px;
+    }
 }

@@ -1,0 +1,190 @@
+.payment-plans {
+    background: #fdf0d7;
+}
+
+.payment-plans-main {
+    padding: 80px 0;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.payment-plans-main>p:nth-child(1) {
+    text-align: center;
+    color: #3e4041;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.payment-plans-main>p:nth-child(2) {
+    text-align: center;
+    color: #312e2d;
+    font-size: 22px;
+    width: fit-content;
+    margin: 10px auto 30px;
+}
+
+.payment-plans-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-plans-money>div {
+    width: 50%;
+    padding-bottom: 20px;
+    background: #d6f4ff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px hsl(0deg 0% 55% / 16%);
+    border-radius: 17px;
+    padding-left: 5%;
+    position: relative;
+    color: #312e2d;
+}
+
+.payment-plans-money>div>img {
+    position: absolute;
+    top: 5%;
+    right: -3.5%;
+    width: 44%;
+}
+
+.payment-plans-money>div>div:nth-child(2) {
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.payment-plans-money>div>div:nth-child(3) {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.payment-plans-money>div>div:nth-child(4) {
+    display: flex;
+    align-items: center;
+}
+
+.payment-plans-money>div>div:nth-child(4)>p {
+    color: #009fe3;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.payment-money-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    font-size: 11px;
+    color: #707070;
+}
+
+.payment-money-back+div {
+    font-size: 20px;
+}
+
+.payment-plans-money>div>div:last-child {
+    display: flex;
+    align-items: center;
+    color: #312e2d;
+    font-size: 16px;
+}
+
+.payment-plans-money>div>div:last-child>p {
+    color: #009fe3;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.payment-plans-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-plans-btn>button {
+    color: #f7f7f7;
+    background: #01a5ec;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    padding: 15px 52px 14px 51px;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.payment-plans-down {
+    margin: 40px;
+}
+
+.payment-plans-down>div {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.payment-plans-down>div>img {
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+}
+
+.payment-plans-down>div>p {
+    color: #424242;
+    font-weight: 700;
+}
+
+
+/* ********************* RESPONSIVE ***************** */
+
+@media screen and (max-width: 1024px) {
+    .payment-plans-money>div{
+        width: 60%;
+    }
+
+    .payment-plans-main>p:nth-child(1){
+        font-size: 30px;
+    }
+
+    .payment-plans-main>p:nth-child(2){
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .payment-plans-money>div {
+        width: 80%;
+        padding-left: 10%;
+    }
+    .payment-plans-money>div>div:nth-child(2){
+        font-size: 18px;
+    }
+    .payment-plans-money>div>div:nth-child(3){
+        font-size: 16px;
+    }
+    .payment-plans-money>div>div:nth-child(4)>p{
+        font-size: 16px;
+    }
+    .payment-money-back+div {
+        font-size: 16px;
+    }
+    .payment-plans-money>div>div:last-child>p{
+        font-size: 16px;
+    }
+    .payment-plans-money>div>div:last-child>span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .payment-plans-money>div {
+        width: 90%;
+    }
+}

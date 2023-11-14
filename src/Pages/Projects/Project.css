@@ -1,0 +1,123 @@
+
+
+.project>header{
+    height: 30vh;
+    background-image: url("https://blog.prepbytes.com/wp-content/uploads/2019/11/Header_Final-1.jpg");
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.project-heading>p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #707070;
+    margin-top: 10px;
+}
+
+.project-nav{
+    background-color: #e3c4b7;
+    width: 100%;
+    padding: 5px 0;
+    padding-top: 8px;
+    position: relative;
+}
+
+.pro-nav-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+.pro-nav-item>a{
+    text-decoration: none;
+    position: relative;
+    color: black;
+    padding: 3px 10px;
+    font-size: 16px;
+}
+.pro-nav-item:not(:nth-child(1))>a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 90%;
+    left: 0;
+    border-bottom: 2px solid red;
+    transition: all 0.3s linear;
+}
+
+.pro-nav-item>a:hover::before{
+    width: 100%;
+}
+
+.pro-nav-item:nth-child(1)>a{
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.proham{
+    display: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    /* margin-right: 5%; */
+}
+
+.hambar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: teal;
+    -webkit-transition:  all 0.3s ease-in-out;
+    transition:  all 0.3s ease-in-out;
+}
+
+/* ****************** RESPONSIVE ******************* */
+
+@media screen and (max-width:1024px) {
+    .pro-nav-menu{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .proham{
+        display: block;
+    }
+    .proham.proActive .hambar:nth-child(2){
+        opacity: 0;
+        width: 50%;
+    }
+    .proham.proActive .hambar:nth-child(1){
+        transform: translateY(8px) rotate(42deg);
+        background-color: blue;
+    }
+    .proham.proActive .hambar:nth-child(3){
+        transform: translateY(-8px) rotate(-42deg);
+        background-color: blue;
+    }
+    .pro-nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 35.4vh;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        background-color: cadetblue;
+        width: 100%;
+        /* text-align: left; */
+        /* margin-bottom: 5px; */
+        transition: 0.7s;
+    }
+    .pro-nav-item{
+        margin: 5px 0;
+    }
+    .pro-nav-menu.proActive{
+        right: 0px;
+    }
+}

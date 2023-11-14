@@ -6,7 +6,7 @@
 }
 
 .compet-enroll-main{
-    width: 1157px;
+    max-width: 1157px;
     display: flex;
     justify-content: space-between;
     margin: 50px auto;
@@ -68,4 +68,32 @@
 }
 .compet-enroll-active>h5, .compet-enroll-active>p{
     color: white;
+}
+
+/* ********************* RESPONSIVE ********************** */
+
+@media screen and (max-width: 768px) {
+    .compet-enroll-main{
+        flex-direction: column;
+        gap: 40px;
+        padding-right: 0;
+    }
+    .compet-enroll-mid{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .compet-enroll-mid>div{
+        padding: 10px 0px;
+        width: 15rem;
+        height: 6rem;
+        padding-left: 20px;
+    }
+    .compet-enroll-mid>div>h5{
+        font-size: 1.2rem;
+    }
+    .compet-enroll-mid>div>p{
+        font-size: 1.1rem;
+        margin-top: 12px;
+    }
 }

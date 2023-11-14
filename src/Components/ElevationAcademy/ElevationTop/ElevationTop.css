@@ -1,0 +1,195 @@
+.elevation-top>section {
+    background-color: rgb(253, 240, 215);
+    margin: auto;
+    max-width: 1286px;
+    display: flex;
+    margin-top: 76px;
+}
+
+.elevation-top-right {
+    width: 70%;
+    height: 620px;
+    background-image: url("../../../../public/images/elevation/top/ISA-masthead-mern-5.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.elevation-top-right>img{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.elevation-top-left {
+    width: 52%;
+    padding: 80px 40px;
+}
+
+.elevation-top-left>h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #3e4041;
+    margin-bottom: 30px;
+}
+
+.elevation-top-left>p {
+    width: 70%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.elevation-top-left>ul {
+    margin: 25px 0;
+    list-style: none;
+}
+
+.elevation-top-left>ul>li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.elevation-top-left>ul>li>img {
+    height: 12px;
+    width: 12px;
+}
+
+.elevation-top-left>ul>li>p {
+    margin-left: 7px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.elevation-top-btn {
+    display: flex;
+}
+
+.elevation-top-btn>button:nth-child(1) {
+    margin-right: 30px;
+    background: #00a5ec;
+    border: none;
+    padding: 12px 50px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.elevation-top-btn>button:nth-child(1):hover {
+    background: #0386be;
+}
+
+.elevation-top-btn>button:nth-child(2) {
+    background: transparent;
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
+    border-radius: 5px;
+    color: #00a5ec;
+    border: 1px solid #00a5ec;
+    padding: 12px 50px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* ********************** RESPONSIVE ********************* */
+
+@media screen and (max-width: 1223px) {
+    .elevation-top-btn>button:nth-child(1) {
+        width: 150px;
+        padding: 12px 15px;
+    }
+
+    .elevation-top-btn>button:nth-child(2) {
+        width: 170px;
+        padding: 12px 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .elevation-top-left>h1 {
+        font-size: 30px;
+    }
+    .elevation-top-left>p {
+        font-size: 16px;
+    }
+    .elevation-top-left>ul>li>p {
+        font-size: 16px;
+    }
+
+    .elevation-top-left{
+        padding-right: 5px;
+    }
+
+    .elevation-top>section{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .elevation-top>section{
+        flex-direction: column-reverse;
+    }
+
+    .elevation-top-left{
+        width: 100%;
+        padding: 20px;
+    }
+    .elevation-top-right{
+        width: 100%;
+    }
+    .elevation-top-left>h1 {
+        font-size: 35px;
+    }
+    .elevation-top-left>p {
+        font-size: 18px;
+    }
+    .elevation-top-left>ul>li>p {
+        font-size: 18px;
+    }
+
+    .elevation-top-right>img{
+        display: block;
+    }
+    .elevation-top-right{
+        background: none;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .elevation-top-right{
+        width: 100%;
+        height: 270px;
+    }
+    .elevation-top-left{
+        padding: 0 20px;
+        margin: 50px 0;
+    }
+    .elevation-top-left>h1 {
+        font-size: 24px;
+    }
+    .elevation-top-left>p {
+        width: 90%;
+    }
+    .elevation-top-left>ul>li>p {
+        font-size: 14px;
+    }
+    .elevation-top-btn{
+        flex-direction: column;
+    }
+    .elevation-top-btn>button:nth-child(1){
+        margin: auto;
+        margin-bottom: 20px;
+        width: 75%;
+    }
+    .elevation-top-btn>button:nth-child(2){
+        margin: auto;
+        width: 75%;
+    }
+}

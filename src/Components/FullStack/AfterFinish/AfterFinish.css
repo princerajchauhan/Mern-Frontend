@@ -50,3 +50,31 @@
     color: rgba(72,55,55,.9294117647058824);
     margin-right: 21px;
 }
+
+/* ****************** RESPONSIVE ***************** */
+
+@media screen and (max-width: 950px) {
+    .after-finish-all{
+        width: 90%;
+    }
+    .after-finish-content>p{
+        margin-bottom: 50px;
+    }
+    .after-finish-content{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .after-finish{
+        flex-direction: column;
+    }
+
+    .after-finish-image{
+        width: 100%;
+    }
+
+    .after-finish-content{
+        width: 100%;
+    }
+}

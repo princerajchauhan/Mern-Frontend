@@ -1,0 +1,111 @@
+
+
+.elevation-faq{
+    padding: 25px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.elevation-faq-top{
+    display: flex;
+    justify-content: center;
+}
+
+.elevation-faq-top>p{
+    color: #3f3c3c;
+    text-align: center;
+    font-size: 1.75rem;
+    position: relative;
+}
+
+.elevation-faq-mid{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.elevation-faq-mid>div{
+    margin: 20px;
+    padding: 20px 17px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.faq-down-inner{
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+
+.faq-down-box:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,.10196078431372549);
+}
+
+.faq-down-box{
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faq-down-box>button{
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    width: 96%;
+    text-align: left;
+    font-weight: 700;
+    color: #707070;
+    background: #fff;
+}
+
+.faq-down-box>button>p{
+    font-weight: 500;
+}
+
+.faq-down-box>button>span{
+    height: 1.25rem;
+    font-weight: 500;
+    width: 1.25rem;
+    margin-left: auto;
+}
+
+.faq-down-data{
+    padding: 10px 25px;
+}
+
+
+.faq-down-data>p{
+    font-size: 16px;
+    color: #858585;
+}
+
+.elevation-faq-active{
+    background: #00a6eb;
+    color: #f7f7f7;
+}
+
+.elevation-faq-inactive{
+    background: #f5f1ff;
+    color: #707070;
+}
+
+@media screen and (max-width: 480px) {
+    .elevation-faq-top>p{
+        font-size: 24px;
+    }
+
+    .faq-down-inner{
+        padding: 10px;
+    }
+    .elevation-faq-down{
+        margin: 20px;
+    }
+    .faq-down-box>button{
+        font-size: 16px;
+    }
+}

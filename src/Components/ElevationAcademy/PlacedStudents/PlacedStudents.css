@@ -1,0 +1,78 @@
+.placed-students {
+    padding: 80px 0;
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.placed-students>h1 {
+    text-align: center;
+    color: #3e4041;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.placed-students>p {
+    text-align: center;
+    color: #858585;
+    font-size: 16px;
+    width: 30%;
+    margin: 7px auto 90px;
+}
+
+.placed-students-main {
+    display: flex;
+}
+
+.placed-students-company {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.placed-students-company>div {
+    box-shadow: 0 10px 35px rgb(4 4 4 / 8%);
+    border-radius: 6px;
+    margin: 15px;
+    align-items: center;
+}
+
+.placed-students-company>div>img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ************************* RESPONSIVE ********************** */
+
+@media screen and (max-width: 768px) {
+    .placed-students>h1 {
+        font-size: 30px;
+    }
+
+    .placed-students>p {
+        width: 70%;
+    }
+    
+    .placed-students-company>div>img {
+        height: 50px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .placed-students>h1 {
+        font-size: 24px;
+    }
+
+    .placed-students>p {
+        width: 90%;
+    }
+
+    .placed-students-company>div{
+        margin: 10px;
+    }
+
+    .placed-students-company>div>img {
+        width: 70px;
+    }
+}

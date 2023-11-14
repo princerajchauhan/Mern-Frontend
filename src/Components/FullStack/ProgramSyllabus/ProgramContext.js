@@ -2,6 +2,7 @@ import { createContext } from "react";
 
 const ProgramContext = createContext([
     {
+        id: 1,
         heading: "Web Development Basics - HTML, CSS, BootStrap",
         week: '1-2',
         desc: 'Get to learn how websites work. Start your web development journey with the basics of HTML and learn how to create impressive websites using HTML, CSS, and Bootstrap.',
@@ -12,6 +13,7 @@ const ProgramContext = createContext([
             "Bootstrap Spinners, Cards, Pagination, Drop Down", "Bootstrap Corousel"]
     },
     {
+        id: 2,
         heading: "Javascript",
         week: "3-4",
         desc: "Deep dive into the world of Javascript, one of the commonly used languages for web development. Explore the basics of JS, promises, closures, and complete Javascript.",
@@ -21,6 +23,7 @@ const ProgramContext = createContext([
                 "ES5 vs ES6 vs ES7", "Eventloop in Javascript"]
     },
     {
+        id: 3,
         heading: "ReactJS",
         week: "5-7",
         desc: "Most of the websites getting built nowadays are using React, so why should you stay behind. Learn all the components of React, understand how React is better, and don't just learn, build amazing web apps using react.",
@@ -30,6 +33,7 @@ const ProgramContext = createContext([
                 "Controlled vs Uncontrolled components", "Redux", "Babel, Webpack", "Axios, Creating a mock server", "SASS overview"]
     },
     {
+        id: 4,
         heading: "NodeJs",
         week: "7-9",
         desc: "Always thinking about how to build servers? Its time to build one. Learn about express, security, authentication, restricting routes, hashing passwords, and JWT’s, and much more.",
@@ -37,6 +41,7 @@ const ProgramContext = createContext([
                 "Express Params and Query String", "Express Middleware", "API Authentication", "JWT Token, Passport.js", "Socket Programming"]
     },
     {
+        id: 5,
         heading: "Databases - MongoDB",
         week: "10",
         desc: "Want to know how companies manage all their Data and how on a click of a button all the data is there? Don't just learn, master the concepts of Databases. Be a pro in managing data using MongoDB.",
@@ -44,6 +49,7 @@ const ProgramContext = createContext([
                 "Understanding CRUD operations"]
     },
     {
+        id: 6,
         heading: "Code Review + Deployment",
         week: "11",
         desc: "Developers don't just write code, they write production level code. Learn how to write production-level code, deploy your projects, and flaunt it to the world.",

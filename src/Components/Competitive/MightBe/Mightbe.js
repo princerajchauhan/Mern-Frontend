@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./Mightbe.css"
-import { useDispatch, useSelector } from "react-redux"
-import { mightData } from '../../../Features/MightSlice'
+// import { useDispatch, useSelector } from "react-redux"
+// import { mightData } from '../../../Features/MightSlice'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-const Mightbe = () => {
+const Mightbe = ({might}) => {
 
-    const { might, isLoading } = useSelector(state => state.might)
+    // const { might } = useSelector(state => state.might)
 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(mightData())
-        //eslint-disable-next-line
-    }, [])
+    // useEffect(() => {
+    //     dispatch(mightData())
+    //     //eslint-disable-next-line
+    // }, [])
 
     const responsive = {
         superLargeDesktop: {
@@ -37,12 +37,10 @@ const Mightbe = () => {
 
     return (
         <div className='mightbe'>
-            {
-                isLoading ? "" : <p>This Might Be You!</p>
-            }
+            <p>This Might Be You!</p>
             <div className="mightbe-carousel">
-                {
-                    isLoading ? <h2>Loading....</h2> :
+                {/* {
+                    isLoading ? <h2>Loading....</h2> : */}
                         <Carousel responsive={responsive} infinite={true} swipeable={true}>{
                             might && might.map(elem => (
                                 <div className="mightbe-box" key={elem.id}>
@@ -58,7 +56,7 @@ const Mightbe = () => {
                                 </div>
                             ))}
                             </ Carousel>
-                }
+                {/* } */}
             </div>
         </div>
     )

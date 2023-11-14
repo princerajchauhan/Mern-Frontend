@@ -1,24 +1,24 @@
-
-.videos-main{
+.videos-main {
     max-width: 1251px;
     margin: auto;
 }
 
-.videos-top-desc{
+.videos-top-desc {
     background-color: #d9f5f9;
     margin-top: 76px;
     justify-content: space-between;
     display: flex;
     padding: 0 40px;
     min-height: 300px;
+    padding-top: 20px;
 }
 
-.videos-top-left{
+.videos-top-left {
     width: 40%;
     padding-top: 65px;
 }
 
-.videos-top-left>h3{
+.videos-top-left>h3 {
     font-size: 32px;
     font-weight: 600;
     padding-top: 16px;
@@ -28,7 +28,7 @@
 }
 
 
-.videos-top-left>p{
+.videos-top-left>p {
     font-size: 14px;
     letter-spacing: 0.14px;
     padding-bottom: 29px;
@@ -36,7 +36,7 @@
     color: #424242;
 }
 
-.videos-categories-main>h3{
+.videos-categories-main>h3 {
     font-size: 18px;
     color: #22559c;
     margin-top: 30px;
@@ -47,14 +47,14 @@
     padding-bottom: 5px;
 }
 
-.videos-category{
+.videos-category {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 50px;
 }
 
-.videos-box{
+.videos-box {
     width: 360px;
     height: 440px;
     margin: 20px;
@@ -65,17 +65,17 @@
     position: relative;
 }
 
-.video-desc{
+.video-desc {
     padding: 25px 20px;
 }
 
-.video-desc>p:nth-child(1){
+.video-desc>p:nth-child(1) {
     color: #424242;
     font-weight: 500;
     font-size: 18px;
 }
 
-.video-desc>p:nth-child(2){
+.video-desc>p:nth-child(2) {
     margin-top: 7px;
     font-size: 14px;
     color: #858585;
@@ -83,7 +83,7 @@
 }
 
 
-.video-icon{
+.video-icon {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -92,8 +92,43 @@
     align-items: center;
 }
 
-.video-icon>p{
-   font-size: 12px;
-   margin-left: 7px;
-   color: #858585;
+.video-icon>p {
+    font-size: 12px;
+    margin-left: 7px;
+    color: #858585;
+}
+
+
+/* ********************* RESPONSIVE ******************* */
+@media screen and (max-width: 970px) {
+    .videos-top-desc {
+        align-items: center;
+    }
+
+    .videos-top-left {
+        padding-top: 0;
+        width: 65%;
+    }
+
+    .videos-top-right>img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .videos-top-desc{
+        flex-direction: column-reverse;
+    }
+    .videos-top-left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .videos-top-right>img {
+        width: 100%;
+    }
+    .videos-top-left>h3{
+        font-size: 24px;
+    }
 }

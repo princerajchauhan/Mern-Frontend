@@ -14,7 +14,7 @@ const FutureSkills = () =>{
                     <p>Full Stack Web Development Certification Course - Accredited by Nasscom, approved by the Government India.</p>
                     <div className="future-skills-btn">
                         <a href="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/PrepBytes+Full+Stack+Development+MERN+Certification+Program.pdf" target='_blank'  rel="noreferrer">
-                            <button>Download</button>
+                            <button>Download Syllabus</button>
                         </a>
                     </div>
                 </div>

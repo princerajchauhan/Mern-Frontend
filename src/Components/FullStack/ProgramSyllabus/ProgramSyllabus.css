@@ -26,7 +26,7 @@
 
 .prog-syllabus-heading>div>a>button {
     background: transparent;
-    -webkit-box-shadow: 0 3px 6px rgb(95 141 196 / 20%);    
+    -webkit-box-shadow: 0 3px 6px rgb(95 141 196 / 20%);
     box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
     border-radius: 5px;
     color: #ff219f;
@@ -107,6 +107,7 @@
 .prog-syllabus-mid>p {
     font-weight: 500;
     font-size: 18px;
+    letter-spacing: 1.3px;
 }
 
 .prog-syllabus-mid>.show-btn {
@@ -176,41 +177,114 @@
     mask-size: cover;
 }
 
-.pro-syllabus-project>div{
+.pro-syllabus-project>div {
     display: flex;
     flex-wrap: wrap;
 }
 
-.pro-syllabus-project>div>div{
+.pro-syllabus-project>div>div {
     margin: 20px auto;
     padding: 15px 20px;
     background-color: #fff;
     position: relative;
-    background: linear-gradient(180deg,#d0dee9,#fff);
+    background: linear-gradient(180deg, #d0dee9, #fff);
     box-shadow: 0 10px 30px rgb(208 222 233 / 42%);
     border-radius: 10px;
     flex: 0 0 20em;
 }
 
-.pro-syllabus-project>div>div>div{
+.pro-syllabus-project>div>div>div {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-.pro-syllabus-project>div>div>div>img{
+.pro-syllabus-project>div>div>div>img {
     height: 100%;
 }
-.pro-syllabus-project>div>div>p:nth-child(2){
-    color: rgba(10,45,71,.9294117647058824);
+
+.pro-syllabus-project>div>div>p:nth-child(2) {
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 15px;
 }
-.pro-syllabus-project>div>div>p:nth-child(3){
-    color: rgba(106,127,134,.9294117647058824);
+
+.pro-syllabus-project>div>div>p:nth-child(3) {
+    color: rgba(106, 127, 134, .9294117647058824);
     text-align: center;
     margin-bottom: 30px;
+}
+
+/* ********************* RESPONSIVE ***************** */
+
+@media screen and (max-width: 1024px) {
+    .prog-syllabus-last>ul {
+        display: block ;
+        padding-left: 90px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .prog-syllabus-heading>div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .prog-syllabus-heading>div>a>button {
+        padding: 11px 50px;
+    }
+
+    .prog-syllabus-heading>div>p {
+        text-align: center;
+    }
+
+    .prog-syllabus-heading>p {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .prog-syllabus-last>ul{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prog-syllabus-top>div {
+        padding: 0;
+    }
+
+    .prog-syllabus-top>div>p:nth-child(1) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .prog-syllabus-top>div>p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .prog-syllabus-top>p {
+        padding: 0;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .prog-syllabus-mid>p {
+        font-size: 16px;
+    }
+
+    .prog-syllabus-mid>.show-btn {
+        margin-bottom: 8px;
+        font-size: 14px;
+        background: #fff;
+    }
+
+    .prog-syllabus-last>ul{
+        display: block;
+        padding-left: 20px;
+    }
 }

@@ -1,0 +1,26 @@
+.spinner-main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.spinner-main>div {
+    height: 100px;
+    width: 100px;
+    animation: spinner 1s linear infinite;
+}
+
+.spinner-main>div>img {
+    width: 100%;
+}
+
+@keyframes spinner {
+    40% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+}

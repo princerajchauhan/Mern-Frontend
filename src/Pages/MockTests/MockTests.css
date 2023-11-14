@@ -2,7 +2,7 @@
 
 .mock-test-top-info{
     width: 100%;
-    height: 38vh;
+    /* height: 38vh; */
     background: transparent linear-gradient(180deg,#3969ad,#1d3557);
 }
 
@@ -82,7 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: 0 10px;
     margin-bottom: 50px;
     column-gap: 40px;
 }
@@ -209,3 +209,56 @@
     }
 }
 
+
+
+/* ******************* RESPONSIVE *********************** */
+
+@media screen and (max-width: 1200px) {
+    .mock-test-top-inner{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .past-mock-test>p::before{
+        width: 37%;
+    }
+    .past-mock-test>p::after{
+        width: 37%;
+    }
+    .mock-test-featured{
+        padding: 0 16px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mock-test-top-inner>p{
+      width: 90%;
+    }
+    .past-mock-test>p::before{
+        width: 32%;
+    }
+    .past-mock-test>p::after{
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .past-mock-test>p::before{
+        width: 28%;
+    }
+    .past-mock-test>p::after{
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .past-mock-test>p::before{
+        width: 23%;
+    }
+    .past-mock-test>p::after{
+        width: 23%;
+    }
+}

@@ -29,20 +29,18 @@ const Register = () => {
 
     const submitForm = (e) => {
         e.preventDefault()
-        console.log(value)
         axios.post("https://mern-backend-pntb.onrender.com/api/register", value)
             .then(res => {
-                if (res.data.msg) {
+                console.log(res.data)
+                if (res.data.msg2) {
                     toast(res.data.msg, { type: 'success', theme: 'colored' })
                     if (res.data.token) {
-                        localStorage.setItem('Token', res.data.token)
-                        localStorage.setItem('Name', res.data.name)
-                        localStorage.setItem('UserId', res.data.userId)
+                        localStorage.setItem('prepbytes-user', JSON.stringify(res.data))
                         navigate('/')
                     }
                 }
                 else {
-                    toast(res.data.msg, { type: 'error', theme: 'colored' })
+                    toast(res.data.msg, { type: 'warning', theme: 'colored' })
                 }
             }).catch(err => toast(err, { type: 'error', theme: 'colored' }))
     }

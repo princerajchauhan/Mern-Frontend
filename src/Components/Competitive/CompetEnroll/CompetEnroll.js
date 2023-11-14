@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import "./CompetEnroll.css"
 
-const CompetEnroll = () =>{
+const CompetEnroll = () => {
     const [addclass, setAddClass] = useState(true)
-    return(
+    return (
         <div className='compet-enroll'>
             <div className="compet-enroll-main">
                 <p>SELECT BATCH</p>
                 <div className="compet-enroll-mid">
-                    <div className={addclass? 'compet-enroll-active':''} onClick={() => setAddClass(!addclass)}>
+                    <div className={addclass ? 'compet-enroll-active' : ''} onClick={() => setAddClass(!addclass)}>
                         <h5>1st May</h5>
                         <p>Enrollment Started</p>
                     </div>
-                    <div className={addclass? '':'compet-enroll-active'} onClick={() => setAddClass(!addclass)}>
+                    <div className={addclass ? '' : 'compet-enroll-active'} onClick={() => setAddClass(!addclass)}>
                         <h5>15th May</h5>
                         <p>Enrollment Started</p>
                     </div>

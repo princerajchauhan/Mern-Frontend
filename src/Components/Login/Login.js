@@ -29,10 +29,8 @@ const Login = () => {
             if (res.data.msg2) {
                 toast(res.data.msg, {type:'success', theme:'colored'})
                 if (res.data.token) {
-                    localStorage.setItem("Token", res.data.token)
-                    localStorage.setItem("Name", res.data.name)
-                    localStorage.setItem("UserId", res.data.userId)
-                    navigate('/')
+                    localStorage.setItem('prepbytes-user', JSON.stringify(res.data))
+                    navigate(-1)
                 }
             }
             else{

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
 
-.login-signup-main{
+.login-signup-main {
     background-image: url('https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/blue-background.webp');
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@
     font-family: "Inter";
 }
 
-.login-signup-main-inner{
+.login-signup-main-inner {
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -17,18 +17,22 @@
     gap: 40px;
 }
 
-.login-signup-left{
+.login-signup-left {
     display: flex;
     padding-top: 100px;
     padding-bottom: 80px;
     width: 60%;
 }
 
-.login-signup-image{
+.login-signup-image {
     width: 75%;
 }
 
-.login-signup-left-box{
+.login-signup-image>img {
+    width: 100%;
+}
+
+.login-signup-left-box {
     width: 215px;
     background-color: white;
     margin-top: 40px;
@@ -38,13 +42,13 @@
     height: fit-content;
 }
 
-.login-signup-left-box>img{
+.login-signup-left-box>img {
     height: 75px;
     margin-bottom: -15px;
     margin-top: -35px;
 }
 
-.login-signup-left-box>div{
+.login-signup-left-box>div {
     display: flex;
     color: #423c3c;
     margin: 18px 8px;
@@ -52,17 +56,18 @@
     justify-content: space-evenly;
 }
 
-.login-signup-left-box>div>img{
+.login-signup-left-box>div>img {
     height: 50px;
 }
 
-.login-signup-left-box>div>div>p:nth-child(1){
+.login-signup-left-box>div>div>p:nth-child(1) {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: -5px;
     text-align: initial;
 }
-.login-signup-left-box>div>div>p:nth-child(2){
+
+.login-signup-left-box>div>div>p:nth-child(2) {
     font-size: 14px;
     font-family: "Inter";
 }
@@ -70,13 +75,13 @@
 
 /* *********************** LOGIN SIGNUP ********************* */
 
-.login-signup-right{
-    width: 35%;
-    /* margin: 40px; */
+.login-signup-right {
+    width: 40%;
+    margin: 40px;
     margin-top: 100px;
 }
 
-.login-signup-right-box{
+.login-signup-right-box {
     background-color: white;
     width: 100%;
     border-radius: 10px;
@@ -84,13 +89,13 @@
     box-shadow: 0 0 10px gray;
 }
 
-.login-signup-right-top-btn{
+.login-signup-right-top-btn {
     width: 100%;
     display: flex;
     border-bottom: 0.5px solid #4b8ce8;
 }
 
-.login-signup-right-top-btn>a{
+.login-signup-right-top-btn>a {
     text-decoration: none;
     width: 50%;
     text-align: center;
@@ -99,8 +104,98 @@
     font-size: 18px;
 }
 
-.btn-active{
+.btn-active {
     font-weight: 600;
     color: #4b8ce8;
     border-bottom: 2px solid #4b8ce8;
+}
+
+
+/* *********************** RESPONSIVE ************************ */
+
+@media screen and (max-width: 1024px) {
+    .login-signup-main-inner {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .login-signup-left {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
+
+    .login-signup-image {
+        width: 60%;
+    }
+
+    .login-signup-left-box>img{
+        display: none;
+    }
+
+    .login-signup-left-box {
+        display: flex;
+        width: 566px;
+        margin-top: -12px;
+    }
+    .login-signup-right{
+        width: 93%;
+        margin-top: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-signup-image{
+        display: none;
+    }
+    .login-signup-main-inner {
+        max-width: 380px;
+    }
+    .login-signup-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .login-signup-left-box{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 14px;
+    }
+    .login-signup-left-box>div{
+        margin: 10px 0;
+        width: 36%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .login-signup-left-box>div>div{
+        text-align: left;
+    }
+
+    .login-signup-left-box>div>img{
+        height: 45px!Important;
+    }
+
+    .login-signup-left-box>div>div>p:nth-child(1){
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .login-signup-left-box>div>div>p:nth-child(2){
+        font-size: 12px;
+    }
 }

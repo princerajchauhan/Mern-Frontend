@@ -1,0 +1,34 @@
+.instructors-main {
+    background-color: rgba(188, 242, 251, 1);
+    margin-top: -60px;
+}
+
+.instructors {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.instructors>img {
+    width: 100%;
+    height: 100%;
+}
+
+.instructors-second {
+    display: none;
+    padding: 180px 20px 0;
+}
+.instructors-second >img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .instructors {
+        display: none;
+    }
+    .instructors-second{
+        display: block;
+
+    }
+}

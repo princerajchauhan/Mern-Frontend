@@ -1,0 +1,244 @@
+.stairs-main {
+    background-color: #f8fafa;
+    padding: 80px 0 0;
+    display: flex;
+    width: 100vw;
+}
+
+.stairs-img-side {
+    width: 50%;
+}
+
+.stairs-img-side>div>img {
+    width: 80%;
+}
+
+.stairs-side {
+    width: 50%;
+}
+
+.stairs-side>p {
+    padding-right: 144px;
+    font-size: 35px;
+    color: #424242;
+    font-weight: 600;
+}
+
+.all-approach {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.approach>div>p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.approach {
+    width: 52%;
+}
+
+.approach>div>div {
+    display: flex;
+    border-radius: 5px;
+    width: 250px;
+    padding: 17px 0;
+    position: relative;
+    padding-left: 40px;
+    gap: 20px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.approch-main {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* ************************ STAIRS ONE **************************** */
+
+.stairs-one-right>div>p {
+    color: rgb(247, 128, 119);
+}
+
+.stairs-one-right>div>div {
+    border: 1px dashed rgb(247, 128, 119);
+    color: rgb(247, 128, 119);
+    background-color: rgb(253, 240, 215);
+}
+
+.stairs-one-right>div>div>img {
+    margin-left: -65px;
+}
+
+.stairs-one-left {
+    margin-bottom: -50px;
+}
+
+/* ************************ STAIRS TWO **************************** */
+.stairs-two {
+    flex-direction: row-reverse;
+}
+
+.stairs-two-right>div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: min-content;
+}
+
+.stairs-two-right>div>p {
+    color: rgb(253, 205, 6);
+}
+
+.stairs-two-right>div>div {
+    border: 1px dashed rgb(253, 205, 6);
+    color: rgb(253, 205, 6);
+    background-color: rgb(255, 249, 228);
+}
+
+.stairs-two-right>div>div>img {
+    margin-left: -65px;
+}
+
+.stairs-two-left {
+    margin-bottom: -20px;
+}
+
+/* ************************ STAIRS THREE **************************** */
+.stairs-three-right>div>p {
+    color: rgb(15, 181, 130);
+}
+
+.stairs-three-right>div>div {
+    border: 1px dashed rgb(15, 181, 130);
+    color: rgb(15, 181, 130);
+    background-color: rgb(228, 246, 241);
+}
+
+.stairs-three-right>div>div>img {
+    margin-left: -65px;
+}
+
+.stairs-three-left {
+    margin-bottom: -50px;
+}
+
+/* ************************ STAIRS FOUR **************************** */
+.stairs-four {
+    flex-direction: row-reverse;
+}
+
+.stairs-four-right>div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: max-content;
+}
+
+.stairs-four-right>div>p {
+    color: rgb(240, 119, 149);
+}
+
+.stairs-four-right>div>div {
+    border: 1px dashed rgb(240, 119, 149);
+    color: rgb(240, 119, 149);
+    background-color: rgb(255, 231, 237);
+}
+
+.stairs-four-right>div>div>img {
+    margin-left: -65px;
+}
+
+.stairs-four-left {
+    margin-bottom: -20px;
+}
+
+
+/* ************************ RESPONSIVE ******************* */
+
+
+@media screen and (max-width: 1024px) {
+    .stairs-img-side {
+        display: none;
+    }
+
+    .stairs-side {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .stairs-side>p {
+        text-align: center;
+        font-size: 24px;
+        padding-right: 0;
+        margin-bottom: 36px;
+    }
+
+    .all-approach {
+        background-image: linear-gradient(rgba(246, 249, 249, 0.8), rgba(246, 249, 249, 0.8)), url("../../../../public/images/stairs/stairs_of_approach.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .all-approach {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .stairs-side {
+        width: 100%;
+    }
+
+    .all-approach {
+        width: 80%;
+    }
+
+    .stairs-four>img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .all-approach {
+        width: 90%;
+    }
+    .stairs-four>img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .all-approach {
+        width: 90%;
+    }
+
+    .approach>div>p {
+        font-size: 16px;
+    }
+
+    .approach>div>div {
+        width: 230px;
+        padding: 15px 0;
+        padding-left: 40px;
+        gap: 10px;
+    }
+    
+    .approach>div>div>p {
+        font-size: 14px;
+    }
+    .stairs-side>p {
+        font-size: 21px;
+    }
+   
+}

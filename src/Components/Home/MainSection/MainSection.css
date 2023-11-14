@@ -1,0 +1,149 @@
+.hero-main {
+    max-width: 1921px;
+}
+
+.top-image-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 78px;
+}
+
+.know-more {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+    padding: 80px;
+    align-items: flex-start;
+}
+
+.know-more>p:nth-child(1) {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3e4041;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+}
+
+.know-more span {
+    display: block;
+    font-weight: 500;
+    color: #f78077;
+}
+
+.know-more>p:nth-child(2) {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #f78077;
+}
+
+.know-more>button {
+    background-color: #00a5ec;
+    color: white;
+    border: none;
+    padding: 12px 52px;
+    border-radius: 4px;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.know-more>button:hover {
+    filter: brightness(0.9);
+}
+
+.image-side {
+    width: 45%;
+}
+
+.image-side>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.four-company {
+    display: flex;
+    max-width: 1180px;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 0 2vw;
+}
+
+.four-company>div {
+    width: 150px;
+    /* width: 11%; */
+}
+
+.four-company>div>img {
+    width: 100%;
+}
+
+/* ****************************** RESPONSIVE ********************** */
+
+@media screen and (max-width: 1200px) {
+
+    .know-more>p:nth-child(1) {
+        font-size: 35px;
+    }
+
+    .know-more>button {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .know-more>p:nth-child(1) {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .top-image-side {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .know-more {
+        width: 80%;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .know-more>p:nth-child(2),
+    .know-more>button {
+        font-size: 21px;
+    }
+
+    .know-more>button {
+        padding: 10px 52px;
+    }
+
+    .image-side {
+        width: 100%;
+    }
+
+    .four-company>div {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .four-company{
+        flex-wrap: wrap;
+    }
+    .four-company>div {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .know-more>p:nth-child(2),
+    .know-more>button {
+        font-size: 16px;
+    }
+}

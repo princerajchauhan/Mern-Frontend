@@ -31,3 +31,22 @@
 .language-right>img{
     width: 100%;
 }
+
+/* ****************** RESPONSIVE ******************** */
+
+@media screen and (max-width: 768px) {
+    .languages-main{
+        flex-direction: column;
+    }
+    .language-left{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .language-left>p:nth-child(1){
+        margin-top: 30px;
+    }
+
+    .language-right{
+        width: 100%;
+    }
+}

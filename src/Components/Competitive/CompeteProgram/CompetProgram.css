@@ -1,6 +1,4 @@
-
-
-.comp-program-main{
+.comp-program-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,14 +9,14 @@
     padding-top: 0;
 }
 
-.comp-program-main>h2{
-    font-size: 1.75rem;
+.comp-program-main>h2 {
+    font-size: 1.85rem;
     text-align: center;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
-.compet-pro-middle{
+.compet-pro-middle {
     height: 100%;
     z-index: 0;
     background: #f8fbff;
@@ -30,12 +28,12 @@
     margin: 0 -30px;
 }
 
-.comp-program-main>img{
+.comp-program-main>img {
     width: 90%;
     height: 20rem;
 }
 
-.compet-pro-all-col{
+.compet-pro-all-col {
     width: 100%;
     padding: 1rem 0rem;
     display: flex;
@@ -44,37 +42,38 @@
 }
 
 
-.compet-pro-all-col>div{
+.compet-pro-all-col>div {
     width: 33%;
 }
 
-.compet-pro-col{
+.compet-pro-col {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.compet-pro-desc>h5{
+.compet-pro-desc>h5 {
     font-size: 14px;
     margin-bottom: 0.5rem;
 }
 
-.compet-pro-desc>p{
+.compet-pro-desc>p {
     font-size: 12px;
 }
 
-.compet-pro-left, .compet-pro-right{
+.compet-pro-left,
+.compet-pro-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.compet-pro-left>.compet-pro-col>.compet-pro-desc{
+.compet-pro-left>.compet-pro-col>.compet-pro-desc {
     text-align: right;
 }
 
-.compet-pro-image{
+.compet-pro-image {
     background-color: white;
     height: 60px;
     width: 90px;
@@ -84,12 +83,13 @@
     z-index: 2;
     align-items: center;
 }
-.compet-pro-image>img{
+
+.compet-pro-image>img {
     width: 40px;
     height: 40px;
 }
 
-.compet-pro-down{
+.compet-pro-down {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -99,17 +99,59 @@
     border-bottom: 1px solid #707070;
 }
 
-.compet-pro-down>div>h1{
+.compet-pro-down>div>h1 {
     font-size: 2.75rem;
     font-weight: 700;
     color: #00a6eb;
 }
-.compet-pro-down>div>p{
+
+.compet-pro-down>div>p {
     font-size: 1.1rem;
     color: #322e2e;
     font-weight: 500;
 }
 
-.compet-pro-down>div{
+.compet-pro-down>div {
     text-align: center;
+}
+
+/* ***************** RESPONSIVE ********************* */
+
+@media screen and (max-width: 768px) {
+    .compet-pro-all-col {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .compet-pro-all-col>div {
+        width: 100%;
+    }
+
+    .compet-pro-left>.compet-pro-col {
+        flex-direction: row-reverse;
+    }
+
+    .compet-pro-left>.compet-pro-col>.compet-pro-desc {
+        text-align: left;
+    }
+
+    .compet-pro-middle {
+        display: none;
+    }
+
+    .compet-pro-left,
+    .compet-pro-right{
+        align-items: flex-start;
+    }
+    .compet-pro-col{
+        gap: 10px;
+        padding: 0.5rem 1rem;
+    }
+
+    .compet-pro-down{
+        flex-direction: column;
+        gap: 30px;
+    }
 }
