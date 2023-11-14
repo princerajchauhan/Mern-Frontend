@@ -138,6 +138,7 @@ const Navbar = () => {
                     <li className='second-nav-item'><Link to="/mern-stack-web-development-career">Elevation Academy</Link></li>
                     <li className='second-nav-item'><Link to="/mock-tests">Mock Tests</Link></li>
                     <li className='second-nav-item'><Link to="/preparation-videos">Video Tutorials</Link></li>
+                    <li className='second-nav-item'><Link to="/project/html">Projects</Link></li>
                     {
                         user ? <li className='second-nav-item'><Link onClick={logoutFun}>Logout</Link></li> :
                             <li className='second-nav-item'><Link to="/login">Login/Signup</Link></li>
