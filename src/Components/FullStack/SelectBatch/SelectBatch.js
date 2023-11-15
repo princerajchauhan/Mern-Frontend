@@ -48,7 +48,7 @@ const SelectBatch = () => {
                         <p>₹ 30000</p>
                         <div>
                             <div><button onClick={enrollFun}>Enroll Now</button></div>
-                            <div><button>Try for free</button></div>
+                            <div><button onClick={() => toast("Sorry! you late for free trial.", {theme:'colored', type: 'info'})}>Try for free</button></div>
                         </div>
                     </div>
                 </div>

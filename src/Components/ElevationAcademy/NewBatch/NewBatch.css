@@ -4,6 +4,7 @@
     margin: auto;
     display: flex;
     padding: 15px 0;
+    width: 100%;
 }
 
 .new-batch-left {

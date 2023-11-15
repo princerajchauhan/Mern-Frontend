@@ -1,7 +1,10 @@
 import React from "react";
 import "./ElevationTop.css"
+import { useNavigate } from "react-router-dom";
+import { MakePayment } from "../../MakePayments/MakePayment";
 
 const ElevationTop = () => {
+    const navigate = useNavigate()
     return (
         <div className="elevation-top">
             <section>
@@ -23,7 +26,11 @@ const ElevationTop = () => {
                         </li>
                     </ul>
                     <div className="elevation-top-btn">
-                        <button>Apply Now</button>
+                        {
+                            JSON.parse(localStorage.getItem("prepbytes-user"))?
+                            <button onClick={() => MakePayment({name: "Elevation Enroll", price:"70000"})}>Apply Now</button>:
+                            <button onClick={() => navigate("/")}>Apply Now</button>
+                        }
                         <button>Get a call back</button>
                     </div>
                 </div>
